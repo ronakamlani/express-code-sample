@@ -1,0 +1,27 @@
+
+<!doctype html>
+<!-- 
+/*
+ *  Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license at the bottom of this file.
+ */
+-->
+<html>
+<head>
+    <title>An Office 365 API Sample App Using Node-Express-Ejs</title>
+  <style>
+    body {padding-top:20px; padding-left:50px; padding-right:50px}
+    .rightAlign { text-align:right}
+    .leftAlign { text-align:left}
+    .centerAlign { text-align:center}
+  </style>
+</head>
+<body class="centerAlign">
+    
+	<div name="display" class="leftAlign">
+		<h1>Whoops! Something has gone wrong.</h1>
+		<p>Message: <%= error.msg %></p>
+		<p>StatusCode: <%= error.status %></p>
+		<pre>StackTrace: <%= error.stack %></pre>        
+	</div>
+</body>
+</html>

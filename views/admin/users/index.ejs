@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../include/head %>
+ <link href="/admin/stylesheets/build/css/custom.min.css" rel="stylesheet">
+ </head>
+<body  class="nav-md">
+
+<font color="#ff0000">
+<%= messages %>
+
+</font>
+  <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="/admin/images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="/admin/dashboard"><i class="fa fa-home"></i> Home </a>
+                                     </li>
+                  <li><a><i class="fa fa-edit"></i> User Management <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="/admin/users/create">Create User</a></li>
+                      <li><a href="/admin/users">List Users</a></li>
+                  
+                    </ul>
+                  </li>             
+                   <li><a><i class="fa fa-edit"></i> Shop Management <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="/admin/shops/create">Create Shop</a></li>
+                      <li><a href="/admin/shops">List Shops</a></li>
+                  
+                    </ul>
+                  </li>          
+                   <li><a><i class="fa fa-edit"></i> Item Management <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="/admin/items/create">Create Item</a></li>
+                      <li><a href="/admin/items">List Items</a></li>
+                  
+                    </ul>
+                  </li>     
+                  <li><a href="/admin/auth/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li> 
+                </ul>
+              </div>
+              
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="/admin/images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="/admin/auth/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="/admin/admin/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="/admin/admin/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="/admin/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="/admin/images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+       
+        <!-- /top navigation -->
+
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left"  style="width:40%;">
+                <h3>Tables <small>Some examples to get you started</small></h3>
+              </div>
+
+              <div class="title_right" style="width:60%;">
+                
+                  <form name="demo_frm" method="get">
+                    <input type="text" name="search[firstName]" value="<%- firstName %>" placeholder="Name">
+                    <input type="text" name="search[lastName]" value="<%- lastName %>" placeholder="Last name">
+                    <input type="text" name="search[email]" value="<%- email %>" placeholder="Email">
+                    Gender: <input type="radio" name="search[gender]" value="male" <% if(gender=="male"){ %>checked="checked" <% } %>>Male
+                    <input type="radio" name="search[gender]" value="female" <% if(gender=="female"){ %>checked="checked" <% } %>>Female<br/>
+                    <input type="submit" value="Go!"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="/admin/users">Clear</a>                   
+                   </form> 
+                  
+                
+              </div>
+            </div>
+            <div class="row">
+            	<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Table design <small>Custom design</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="x_content">
+
+                    <p>Add class <code>bulk_action</code> to table for bulk actions options on row select</p>
+
+                    <div class="table-responsive">
+                    <form name="f1">
+                      <table id="my_table" class="table table-striped jambo_table bulk_action tablesorter">
+                        <thead>
+                          <tr class="headings">
+                            <th>
+                              <input type="checkbox" id="check-all" class="flat">                        
+                            </th>                            
+                            <th class="column-title">Name</th>
+                            <th class="column-title">Last Name </th>
+                            <th class="column-title">Middle Name </th>
+                            <th class="column-title">Gender </th>
+                            <th class="column-title">Date of Birth </th>
+                            <th class="column-title">Photo </th>
+                            <th colspan=2 class="column-title no-link last"><span class="nobr">Action</span>
+                            </th>
+                            <th class="bulk-actions" colspan="7">
+                              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <% for (var i = 0; i < users.length; i++) { %>
+                          <tr>
+                            <td class="a-center ">
+                              <input type="checkbox" class="checkbox" id="cb" name="table_records" value="<%- users[i]._id %>">
+                            </td>
+                            <td class=" "><%- users[i].firstName %></td>
+                            <td class=" "><%- users[i].lastName %></td>
+                            <td class=" "><%- users[i].email %></td>
+                            <td class=" "><%- users[i].gender %></td>
+                            <td class=" "><%- (users[i].dateOfBirth).toDateString() %></td>
+                            <td class=" "><img src="/admin/images/users/<%- users[i].photo %>" height=50 width=50></td>
+                            <td class=" "><a href='/admin/users/edit/<%- users[i]._id %>'>Edit</a>
+                            <td class=" "><a href="/admin/users/delete/<%- users[i]._id %>">Delete</a>
+                            </td>
+                          </tr>   
+                          <% } %>                      
+                        </tbody>
+                      </table>
+                      <a style="color:#ff0000;font-size:20px;" class="sendEmail" href="/admin/users/delete">Delete Selected</a>
+                      </form>
+                      <table style="border:solid 1px;float:right">
+                      <tr>
+                      <% var j = (count/10)+1;
+                        for(var k=1;k<=j;k++) {%>
+                          <td style="padding:5px;"><a href="/admin/users?page=<%- k %>"><%- k %></a></td>
+                      <% } %>  
+
+                      </tr>
+                      </table>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            </div>
+            <div class="clearfix"></div>
+
+             <footer>
+        <% include ../include/footer %>
+    </footer>
+     <!-- jQuery -->
+    <script src="/admin/javascripts/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/admin/javascripts/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/admin/javascripts/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/admin/javascripts/vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="/admin/javascripts/vendors/iCheck/icheck.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="/admin/javascripts/build/js/custom.min.js"></script>
+    <script src="/admin/javascripts/jquery-1.2.6.min.js"></script>
+
+  <!-- Pick a theme, load the plugin & initialize plugin -->
+  
+  <script src="/admin/javascripts/jquery.tablesorter.min.js"></script>
+  <script src="/admin/javascripts/jquery.tablesorter.widgets.min.js"></script>
+  <script>
+  $(function(){
+    $('table').tablesorter({
+      widgets        : ['zebra', 'columns'],
+      usNumberFormat : false,
+      sortReset      : true,
+      sortRestart    : true
+    });
+  });
+  </script>
+     
+    <script>
+      $(document).ready(function () {
+        var checkboxes = document.getElementsByClassName("checkbox");
+        for (var i = 0; i < checkboxes.length ; i++) {
+          checkboxes[i].checked=false;
+        }  
+        $("#check-all").click(function() {
+          if($(this).is(':checked')){
+            var checkboxes = document.getElementsByClassName("checkbox");
+            for (var i = 0; i < checkboxes.length ; i++) {
+              checkboxes[i].checked = true;
+            }  
+          }
+          else{
+            var checkboxes = document.getElementsByClassName("checkbox");
+            for (var i = 0; i < checkboxes.length ; i++) {
+              checkboxes[i].checked=false;
+            }  
+          }
+        });  
+        $(".sendEmail").click(function() {
+        var emails = [];
+        var checkboxes = document.getElementsByClassName("checkbox");
+        for (var i = checkboxes.length -1 ; i>= 0; i--) {
+            if (checkboxes[i].type === "checkbox" && checkboxes[i].checked) {
+              emails.push(checkboxes[i].value);
+            }
+        }
+        var link = "/admin/users/delete?";
+        for(var i = 0; i < emails.length; i++){
+          link += "emails=" + emails[i] + "&";
+        } 
+        $(this).attr("href", link);
+      });
+    });
+    </script>
+</body>
+</html>
+
